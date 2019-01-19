@@ -1,4 +1,4 @@
-package Academy;
+package resources;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,7 +15,7 @@ public class Base {
 	
 	public WebDriver initializeDriver() throws IOException {
 		Properties props = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\zzmar_000\\Desktop\\IT_Related\\AutomationTestingFrameworkBuild\\src\\main\\java\\Academy\\data.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\zzmar_000\\Desktop\\IT_Related\\AutomationTestingFrameworkBuild\\src\\main\\java\\resources\\data.properties");
 		props.load(fis);
 		String browserName = props.getProperty("browser");
 		if(browserName.equals("chrome")) {
