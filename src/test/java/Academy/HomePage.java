@@ -2,6 +2,8 @@ package Academy;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,17 +12,26 @@ import pageObjects.LoginPage;
 import resources.Base;
 
 public class HomePage extends Base{
+	
+	@BeforeMethod
+	public void initializeBrowser() throws IOException {
+		driver = initializeDriver();
+		driver.get(props.getProperty("url"));
+	}
 
 	@Test(dataProvider = "getData")
 	public void basePageNavigation(String email, String password) throws IOException {
-		driver = initializeDriver();
-		driver.get(props.getProperty("url"));
 		LandingPage landingPage = new LandingPage(driver);
 		landingPage.getLoginLink().click();
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.getEmailAddressInput().sendKeys(email);
 		loginPage.getPasswordInput().sendKeys(password);
 		loginPage.getLoginButton().click();
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.close();
 	}
 	
 	@DataProvider
