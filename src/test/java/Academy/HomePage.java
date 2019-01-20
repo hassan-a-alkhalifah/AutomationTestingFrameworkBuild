@@ -14,7 +14,7 @@ public class HomePage extends Base{
 	@Test(dataProvider = "getData")
 	public void basePageNavigation(String email, String password) throws IOException {
 		driver = initializeDriver();
-		driver.get("http://www.qaclickacademy.com/");
+		driver.get(props.getProperty("url"));
 		LandingPage landingPage = new LandingPage(driver);
 		landingPage.getLoginLink().click();
 		LoginPage loginPage = new LoginPage(driver);
