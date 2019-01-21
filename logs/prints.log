@@ -1,0 +1,6 @@
+10:31:25.064 [main] INFO  resources.Base - Successfully clicked login button
+10:31:25.114 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
+10:31:25.148 [main] INFO  resources.Base - Successfully identified main navigation
+10:31:25.178 [main] INFO  resources.Base - Successfully identified FEATURED COURSES text
+10:31:25.263 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
+10:31:25.417 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
