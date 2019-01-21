@@ -1,6 +1,6 @@
-13:25:44.934 [main] INFO  resources.Base - Successfully entered password into password input
-13:25:46.357 [main] INFO  resources.Base - Successfully clicked login button
-13:25:46.396 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
-13:25:48.490 [main] INFO  resources.Base - Driver is initialized
-13:25:54.558 [main] INFO  resources.Base - Successfully identified main navigation
-13:25:54.647 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
+14:06:43.847 [main] INFO  resources.Base - Successfully entered password into password input
+14:06:45.392 [main] INFO  resources.Base - Successfully clicked login button
+14:06:45.438 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
+14:06:47.549 [main] INFO  resources.Base - Driver is initialized
+14:06:53.484 [main] INFO  resources.Base - Successfully identified main navigation
+14:06:55.797 [main] INFO  resources.Base - Successfully shutdown driver and closed browser
