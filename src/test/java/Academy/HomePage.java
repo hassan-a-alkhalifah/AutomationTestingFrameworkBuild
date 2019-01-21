@@ -42,6 +42,7 @@ public class HomePage extends Base{
 	@AfterMethod
 	public void tearDown() {
 		driver.close();
+		driver = null;
 		log.info("Successfully shutdown driver and closed browser");
 	}
 	
